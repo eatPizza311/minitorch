@@ -1,0 +1,43 @@
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "N",
+    "W",
+    "I",
+    "D",
+]
+
+exclude = [
+    ".git",
+    "__pycache__",
+    "docs/slides/*",
+    "old",
+    "build",
+    "dist",
+]
+
+ignore = [
+    "E501",
+    "E741",
+    "N801",
+    "N802",
+    "N803",
+    "N806",
+]
+
+# Same as Black.
+line-length = 88
+
+# Assume Python 3.10.
+target-version = "py310"
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Note: Ruff supports a top-level `src` option in lieu of isort's `src_paths` setting.
+src = ["minitorch", "test"]
+
+[tool.ruff.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
