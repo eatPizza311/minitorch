@@ -24,7 +24,7 @@ Here are what I've changed:
    
    And Ruff has a [plan to implement the functionality](https://github.com/charliermarsh/ruff/issues/458), so I decide to replace flake8 and isort at once.
    
-   I add the `.pre-commit-config.yaml` and `pyproject.toml` that allows us to utilize [pre-commit](https://pre-commit.com/) base on `setup.cfg`.
+   I add the `.pre-commit-config.yaml` and `ruff.toml` that allows us to utilize [pre-commit](https://pre-commit.com/) base on `setup.cfg`.
    
    But note that Ruff does not support some rules, so that you won't find them in the abovementioned Ruff configuration file.
    
